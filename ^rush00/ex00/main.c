@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 12:48:29 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/07 15:34:47 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/07 15:08:42 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/07 17:45:56 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	rush(int x, int y);
 
-void	ft_putchar(char c);
-
-void	ft_putchar(char c)
+int	main(void)
 {
-	write(1, &c, 1);
+	rush(8, 6);
+	return (0);
 }
