@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: angmarti <angmarti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 15:08:42 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/07 17:45:56 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/07 19:26:07 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(8, 6);
+	rush(2, 2);
 	return (0);
 }
