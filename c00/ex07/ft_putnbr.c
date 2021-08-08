@@ -1,43 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 21:38:25 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/08 21:07:54 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/08 21:30:05 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/08 21:45:03 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
-void	ft_print_comb(void);
-
-void	ft_print_comb(void)
+void	ft_putchar(char c)
 {
-	char	num0;
-	char	num1;
-	char	num2;
+	write(1, &c, 1);
+}
 
-	num0 = '0';
-	while (num0 < '8')
+void	ft_putnum(int n)
+{
+	if (n < 10)
 	{
-		num1 = num0 + 1;
-		while (num1 < '9')
-		{
-			num2 = num1 + 1;
-			while (num2 <= '9')
-			{
-				write(1, &num0, 1);
-				write(1, &num1, 1);
-				write(1, &num2, 1);
-				if (num0 != '7' && num0 != '8' && num0 != '9')
-					write(1, ", ", 2);
-				num2++;
-			}
-			num1++;
-		}
-		num0++;
+		ft_putchar('0');
+		ft_putchar(n + '0');
+	}
+	else
+	{
+		ft_putchar(n / 10 + '0');
+		ft_putchar(n % 10 + '0');
 	}
 }
+/*
+** int [−2.147.483.647, +2.147.483.647] 
+%10 y /10. e ir almacenando en un array char
+*/
+void	ft_putnbr(int nb)
+{
+	if (nb < 0)
+		ft_putchar('-');
+}
+
+int	main(void)
+{
+	printf("%d", 2147483647);
+}
+s

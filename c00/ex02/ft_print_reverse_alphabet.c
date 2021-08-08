@@ -1,43 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 21:38:25 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/08 21:07:54 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/08 20:09:28 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/08 20:43:05 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_comb(void);
+void	ft_print_reverse_alphabet(void);
 
-void	ft_print_comb(void)
+void	ft_print_reverse_alphabet(void)
 {
-	char	num0;
-	char	num1;
-	char	num2;
+	char	ch;
 
-	num0 = '0';
-	while (num0 < '8')
+	ch = 'z';
+	while (ch >= 'a')
 	{
-		num1 = num0 + 1;
-		while (num1 < '9')
-		{
-			num2 = num1 + 1;
-			while (num2 <= '9')
-			{
-				write(1, &num0, 1);
-				write(1, &num1, 1);
-				write(1, &num2, 1);
-				if (num0 != '7' && num0 != '8' && num0 != '9')
-					write(1, ", ", 2);
-				num2++;
-			}
-			num1++;
-		}
-		num0++;
+		write(1, &ch, 1);
+		ch--;
 	}
 }
