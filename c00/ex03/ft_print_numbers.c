@@ -6,13 +6,11 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 19:29:17 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/07 15:31:49 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:49:01 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_print_numbers(void);
 
 void	ft_print_numbers(void)
 {

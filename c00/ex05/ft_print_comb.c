@@ -6,13 +6,11 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 21:38:25 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/08 21:07:54 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/10 10:05:04 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_print_comb(void);
 
 void	ft_print_comb(void)
 {
@@ -32,7 +30,7 @@ void	ft_print_comb(void)
 				write(1, &num0, 1);
 				write(1, &num1, 1);
 				write(1, &num2, 1);
-				if (num0 != '7' && num0 != '8' && num0 != '9')
+				if (num0 != '7')
 					write(1, ", ", 2);
 				num2++;
 			}

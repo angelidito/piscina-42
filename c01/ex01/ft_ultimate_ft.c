@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 13:48:33 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/09 19:49:08 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/09 14:37:44 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/10 11:02:11 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
+void	ft_ultimate_ft(int *********nbr)
 {
-	char	ch;
-
-	ch = 'a';
-	while (ch <= 'z')
-	{
-		write(1, &ch, 1);
-		ch++;
-	}
+	*********nbr = 42;
 }

@@ -6,7 +6,7 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 21:38:25 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/08 21:19:47 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/09 13:46:48 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,4 @@ void	ft_print_comb2(void)
 		}
 		n1++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb2();
 }

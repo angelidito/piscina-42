@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 13:48:33 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/09 19:49:08 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/09 14:36:45 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/10 11:42:03 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_print_alphabet(void)
+void	ft_ft(int *nbr)
 {
-	char	ch;
+	*nbr = 42;
+}
 
-	ch = 'a';
-	while (ch <= 'z')
-	{
-		write(1, &ch, 1);
-		ch++;
-	}
+int	main(void)
+{
+	int		a;
+	int		*nbr;
+
+	a = 20;
+	nbr = &a;
+	printf("nbr = %d\n", *nbr);
+	ft_ft(nbr);
+	printf("nbr = %d\n", *nbr);
 }

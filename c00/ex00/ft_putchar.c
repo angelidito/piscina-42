@@ -6,13 +6,11 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 12:48:29 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/07 15:34:47 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:49:16 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_putchar(char c);
 
 void	ft_putchar(char c)
 {
