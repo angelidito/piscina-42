@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 14:37:44 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/12 13:18:22 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/10 16:28:52 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/13 11:48:53 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <unistd.h>
 
-void	ft_ultimate_ft(int *********nbr)
+void	ft_putstr(char *str)
 {
-	*********nbr = 42;
+	int		i;
+
+	i = -1;
+	while (*(str + ++i) != '\0')
+		write(1, (str + i), 1);
 }
 
 // int	main(void)
 // {
-// 	int		a;
-// 	int		*b = &a;
-// 	int		**c = &b;
-// 	int		***d = &c;
-// 	int		****e = &d;
-// 	int		*****f = &e;
-// 	int		******g = &f;
-// 	int		*******h = &g;
-// 	int		********i = &h;
-// 	int		*********j = &i;
+// 	char	a[4];
+// 	char	*ptr;
 
-// 	ft_ultimate_ft(j);
-
-// 	printf("nbr = %d\n", a);
+// 	a[1] = 'a';
+// 	a[2] = 'b';
+// 	a[3] = 'c';
+// 	a[0] = 'd';
+// 	ptr = &a[0];
+// 	ft_putstr(ptr);
+// 	return (0);
 // }

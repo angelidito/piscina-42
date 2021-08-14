@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 14:37:44 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/12 13:18:22 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/10 20:10:34 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/14 17:01:48 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 
-void	ft_ultimate_ft(int *********nbr)
+int	ft_strlen(char *str)
 {
-	*********nbr = 42;
+	int		i;
+
+	i = -1;
+	while (*(str + ++i) != '\0')
+		;
+	return (i);
 }
 
 // int	main(void)
 // {
-// 	int		a;
-// 	int		*b = &a;
-// 	int		**c = &b;
-// 	int		***d = &c;
-// 	int		****e = &d;
-// 	int		*****f = &e;
-// 	int		******g = &f;
-// 	int		*******h = &g;
-// 	int		********i = &h;
-// 	int		*********j = &i;
+// 	char	a[1] = {'1'};
+// 	// char	a[3] = {'1', 'b', '3'};
+// 	// char	a[6] = {'1', 'b', '3', 'd', '5', 'f'};
+// 	char	*ptr;
 
-// 	ft_ultimate_ft(j);
-
-// 	printf("nbr = %d\n", a);
+// 	ptr = &a[0];
+// 	printf("%d", ft_strlen(ptr));
+// 	return (0);
 // }
