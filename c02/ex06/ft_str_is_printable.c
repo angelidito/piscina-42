@@ -1,43 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/13 12:41:47 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/17 20:12:56 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/16 17:22:10 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/17 20:14:13 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
 // #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_str_is_printable(char *str)
 {
-	int		i;
+	int	i;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	i = -1;
+	while (str[++i] != '\0')
+		if (str[i] == 127 || str[i] < 32)
+			return (0);
+	return (1);
 }
 
 // int	main(void)
 // {
-// 	char	*src;
-// 	char	dest[13];
-// 	// char	str1[] = "Flavio";
-// 	// char	str2[] = "Gaucho";
+// 	char	str[5] = "adf";
 
-// 	src = "Hello World!";
-// 	printf("base   : %s\n", src);
-// 	strcpy(dest, src);
-// 	printf("cpy    : %s\n", dest);
-// 	ft_strcpy(dest, src);
-// 	printf("ft_cpy : %s\n", dest);
+// 	printf("%d - %s\n", ft_str_is_printable(&str[0]), str);
 // }

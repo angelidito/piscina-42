@@ -1,43 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/13 12:41:47 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/17 20:12:56 by angmarti         ###   ########.fr       */
+/*   Created: 2021/08/16 17:38:50 by angmarti          #+#    #+#             */
+/*   Updated: 2021/08/17 20:14:26 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
 // #include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strlowcase(char *str)
 {
-	int		i;
+	int	i;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	i = -1;
+	while (str[++i] != '\0')
+		if (str[i] <= 'Z' && str[i] >= 'A')
+			str[i] += 32;
+	return (str);
 }
 
 // int	main(void)
 // {
-// 	char	*src;
-// 	char	dest[13];
-// 	// char	str1[] = "Flavio";
-// 	// char	str2[] = "Gaucho";
+// 	char	str[55] = "aAdf!.-´ç*";
 
-// 	src = "Hello World!";
-// 	printf("base   : %s\n", src);
-// 	strcpy(dest, src);
-// 	printf("cpy    : %s\n", dest);
-// 	ft_strcpy(dest, src);
-// 	printf("ft_cpy : %s\n", dest);
+// 	printf("Original: %s\n", str);
+// 	printf("   Nueva: %s\n", ft_strlowcase(&str[0]));
 // }
