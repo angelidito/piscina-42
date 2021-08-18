@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jsanfeli <jsanfeli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: angmarti <angmarti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/14 11:41:50 by dgomez-b          #+#    #+#             */
-/*   Updated: 2021/08/15 23:36:30 by jsanfeli         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:32:13 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	main(int argc, char *argv[])
 	int	j;
 
 	i = -1;
-	while (i++ < 6)
+	while (++i < 6)
 	{
 		j = -1;
 		while (++j < 6)

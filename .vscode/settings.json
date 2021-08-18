@@ -1,3 +1,4 @@
 {
-	"beautify.ignore": "*.c"
+	"beautify.ignore": "*.c",
+	"editor.renderWhitespace": "all"
 }
