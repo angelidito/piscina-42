@@ -6,7 +6,7 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 19:13:33 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/19 19:17:51 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/26 17:05:56 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	while (dest[i])
 		i++;
 	while (src[j] && j < nb)
-	{
 		dest[i++] = src[j++];
-	}
+	dest[i] = '\0';
 	return (dest);
 }
 

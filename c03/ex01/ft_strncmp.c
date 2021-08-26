@@ -6,12 +6,12 @@
 /*   By: angmarti <angmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 16:27:57 by angmarti          #+#    #+#             */
-/*   Updated: 2021/08/18 17:45:40 by angmarti         ###   ########.fr       */
+/*   Updated: 2021/08/26 17:04:04 by angmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
@@ -53,19 +53,34 @@ int	main(void)
 	int	t;
 
 	t = 1;
-	test(t++, "hola", "hola",4);
-	test(t++, "hola", "hol?",4);
-	test(t++, "hola", "ho??",4);
-	test(t++, "hol\0", "hol\0",4);
-	test(t++, "ho\0a", "ho\0a",4);
-	test(t++, "ho\0a", "hol\0",4);
-	test(t++, "\0ola", "\0ola",4);
-	test(t++, "ho\tla!", "ho\tla!",4);
-	test(t++, "ho\tla!", "hola!",4);
+	test(t++, "hola", "hola", 10);
+	test(t++, "hola", "hol?", 10);
+	test(t++, "hola", "ho??", 10);
+	test(t++, "hol\0", "hol\0", 10);
+	test(t++, "ho\0a", "ho\0a", 10);
+	test(t++, "ho\0a", "hol\0", 10);
+	test(t++, "\0ola", "\0ola", 10);
+	test(t++, "ho\tla!", "ho\tla!", 10);
+	test(t++, "ho\tla!", "hola!", 10);
+	test(t++, "hol\0a!", "hol\0a!", 10);
+	test(t++, "ho\tla!", "ho\tla!", 10);
+	test(t++, "ho\tla!", "hola!", 10);
+	test(t++, "\0\0\0\0", "\0\0\0\0", 10);
+	test(t++, "hola\0\0\0\0", "hola\0\0\0\0", 10);
+	test(t++, "hola\0\0\0\0", "hol\0\0\0\0", 10);
+	test(t++, "hola", "hola", 6);
+	test(t++, "hola", "hol?", 6);
+	test(t++, "hola", "ho??", 6);
+	test(t++, "hol\0", "hol\0", 6);
+	test(t++, "ho\0a", "ho\0a", 6);
+	test(t++, "ho\0a", "hol\0", 6);
+	test(t++, "\0ola", "\0ola", 6);
+	test(t++, "ho\tla!", "ho\tla!", 6);
+	test(t++, "ho\tla!", "hola!", 6);
 	test(t++, "hol\0a!", "hol\0a!", 6);
-	test(t++, "ho\tla!", "ho\tla!", 5);
-	test(t++, "ho\tla!", "hola!", 5);
-	test(t++, "\0\0\0\0", "\0\0\0\0", 5);
+	test(t++, "ho\tla!", "ho\tla!", 6);
+	test(t++, "ho\tla!", "hola!", 6);
+	test(t++, "\0\0\0\0", "\0\0\0\0", 6);
 	test(t++, "hola\0\0\0\0", "hola\0\0\0\0", 6);
 	test(t++, "hola\0\0\0\0", "hol\0\0\0\0", 6);
 }
