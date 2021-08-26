@@ -1,0 +1,5 @@
+Credentials cache: API:4C649620-3846-40BA-BEAD-96F3BF68626B
+        Principal: hcordoba@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  2 19:00:49 2021  Aug  3 05:00:42 2021  krbtgt/42MADRID.COM@42MADRID.COM

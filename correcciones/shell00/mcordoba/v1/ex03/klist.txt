@@ -1,0 +1,6 @@
+Credentials cache: API:5799
+        Principal: mcordoba@42MADRID.COM
+
+  Issued                Expires             Flags    Principal
+Aug  5 09:23:18 2021  Aug  5 19:23:18 2021  FPIA   krbtgt/42MADRID.COM@42MADRID.COM
+Aug  5 09:23:18 2021  Aug  5 19:23:18 2021  FPA    HTTP/student-storage.42madrid.com@42MADRID.COM

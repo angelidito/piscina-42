@@ -1,0 +1,8 @@
+Credentials cache: API:5878
+        Principal: ansilvan@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  4 19:09:23 2021  Aug  5 05:09:23 2021  krbtgt/42MADRID.COM@42MADRID.COM
+Aug  4 19:09:23 2021  Aug  5 05:09:23 2021  HTTP/student-storage.42madrid.com@42MADRID.COM
+
+

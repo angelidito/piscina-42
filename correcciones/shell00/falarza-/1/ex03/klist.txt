@@ -1,0 +1,5 @@
+Credentials cache: API:6D80E40B-0A2E-45B9-9398-90D2FEB775D9
+        Principal: falarza-@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  5 18:15:26 2021  Aug  6 04:15:26 2021  krbtgt/42MADRID.COM@42MADRID.COM

@@ -1,0 +1,13 @@
+Credentials cache: API:E6457959-ACCE-4802-92FA-BDBBB07137BB
+        Principal: jlabrado@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  2 19:41:01 2021  Aug  3 05:40:29 2021  krbtgt/42MADRID.COM@42MADRID.COM
+
+
+Credentials cache: API:5804
+        Principal: jlabrado@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  2 15:26:28 2021  Aug  3 01:26:28 2021  krbtgt/42MADRID.COM@42MADRID.COM
+Aug  2 15:26:29 2021  Aug  3 01:26:28 2021  HTTP/student-storage.42madrid.com@42MADRID.COM
